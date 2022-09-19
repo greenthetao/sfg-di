@@ -10,6 +10,7 @@ public class ConstructorInjectorController
 	private final GreetingService greetingService;
 
 	public ConstructorInjectorController(@Qualifier("constructorGreetingServiceImpl") GreetingService greetingService)
+//	public ConstructorInjectorController(GreetingService greetingService)
 	{
 		super();
 		this.greetingService = greetingService;
